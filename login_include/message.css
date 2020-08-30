@@ -1,0 +1,67 @@
+body{
+    background-color: #000000;   
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F1F1F1;
+    background-color: rgba(0,0,0,0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+ }
+ .popup-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 250px;
+    margin-left: 220px;
+    z-index: 1;
+    background-color: #606060;
+    width: 50%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.5s;
+    animation-name: slideIn;
+    animation-duration: 0.5s
+ }
+ .end {
+    color: white;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+ }
+ .end:hover,
+ .end:focus {
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+ .popup-header {
+    padding: 1px 10px;
+    background-color: #FF0000;
+    color: white;
+ }
+ .popup-body {padding: 1px 5px;}
+ @-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+ }
+ @keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+ }
+ @-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+ }
+ @keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+ }
